@@ -3,24 +3,37 @@
 <head>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script type="text/javascript">
+
+//    Daily Challenge 1    //
 var haystack = ['cat', 'dog', 'bird', 'turtle', 'lizard'];
 var needle = ['dog', 'lizard', 'flower', 'monkey', 'unicorn'];
-var temp_array = [];
+var dc1_array = [];
 
 for (var i = 0; i < haystack.length; i++){
 	for(var j = 0; j < needle.length; j++){
 		if (haystack[i] == needle[j]){
-			temp_array.push(haystack[i]);
+			dc1_array.push(haystack[i]);
 		}
 	}
 }
-$('.array_output').append(temp_array);
+console.log("daily challenge 1: ", dc1_array);
+
+
+//    Daily Challenge 2    //
+var ary1 = [1, 2, 3];
+var ary2 = [1, 2, 3];
+temp_num = 0;
+dc2_array = [];
+	for (var i = 0; i < ary1.length; i++){
+		temp_num = ary1[i] + ary2[i];
+		dc2_array.push(temp_num);
+	}
+console.log("daily challenge 2: ", dc2_array);
 
 </script>
 	<title></title>
 </head>
 <body>
-<div class="array_output">
-</div>
+
 </body>
 </html>
